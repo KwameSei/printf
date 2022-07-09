@@ -4,4 +4,4 @@
 #A collaboration between 
 #Kwabena Boadi Sapong
 #and
-#Type your name here... 
+#Nathaniel Osei
