@@ -1,7 +1,7 @@
-##Printf Project Repo
+<h1>Printf Project Repo<h1>
 
 
-#A collaboration between 
-#Kwabena Boadi Sapong
-#and
-#Nathaniel Osei
+<p>A collaboration between<p> 
+<p>Kwabena Boadi Sapong<p>
+<p>and<p>
+<p>Nathaniel Osei<p>
