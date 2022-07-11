@@ -1,4 +1,4 @@
-#ifndef  _MAIN_H_
+#ifndef _MAIN_H_
 #define _MAIN_H_
 #include <unistd.h>
 #include <stdarg.h>
@@ -6,7 +6,7 @@
 #include <limits.h>
 
 /**
- * struct op - flag / function object
+ * struct sps - flag / function object
  *@c: flag
  *@f: function
  */
@@ -17,7 +17,7 @@ char *c;
 int (*f)(va_list arg);
 } sps_t;
 
-int -print(const char *format, ...);
+int _printf(const char *format, ...);
 int _putchar(char c);
 int print_c(va_list arg);
 int (*get_func(char s))(va_list arg);
