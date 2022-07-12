@@ -34,7 +34,6 @@ int _printf(const char *format, ...)
 					print = get_func(format[i + 1]);
 					count += (print ? print(arg) : _putchar(format[i])
 						  + _putchar(format[i + 1]));
-							+_putchar(format[i + 1]));
 					i++;
 				}
 			}
