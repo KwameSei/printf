@@ -23,3 +23,4 @@ int (*get_func(char s))(va_list)
 			return (sps[i].f);
 	}
 	return (NULL);
+}
