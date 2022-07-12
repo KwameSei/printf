@@ -7,9 +7,9 @@
  */
 int print_c(va_list arg)
 {
-	int c = va_arg(arg, int);
+int c = va_arg(arg, int);
 
-	return (_putchar(c));
+return (_putchar(c));
 }
 
 /**
@@ -19,16 +19,16 @@ int print_c(va_list arg)
  */
 int print_s(va_list arg)
 {
-	int i, len = 0;
-	char *str;
+int i, len = 0;
+char *str;
 
-	str = va_arg(arg, char *);
-	if (str == NULL)
-		str = "nil";
+str = va_arg(arg, char *);
+if (str == NULL)
+str = "nil";
 
-	for (i = 0; str[i]; i++)
-		len += _putchar(str[i]);
-	return (len);
+for (i = 0; str[i]; i++)
+len += _putchar(str[i]);
+return (len);
 }
 
 /**
@@ -38,37 +38,37 @@ int print_s(va_list arg)
  */
 int print_d(va_list arg)
 {
-	unsigned int num_abs, num_aux, count_Zero, count;
-	int nums;
+unsigned int num_abs, num_aux, count_Zero, count;
+int nums;
 
-	count = 0;
+count = 0;
 
-	nums = va_arg(arg, int);
+nums = va_arg(arg, int);
 
-	if (nums < 0)
-	{
-		num_abs = (nums * -1);
-		count += _putchar(45);
-	}
-	else
-		num_abs = nums;
-
-
-	num_aux = num_abs;
-	count_Zero = 1;
-	while (num_aux > 9)
-	{
-		num_aux /= 10;
-		count_Zero *= 10;
-	}
+if (nums < 0)
+{
+num_abs = (nums * -1);
+count += _putchar(45);
+}
+else
+num_abs = nums;
 
 
-	while (count_Zero >= 1)
-	{
-		count += _putchar(((num_abs / count_Zero) % 10) + '0');
-		count_Zero /= 10;
-	}
-	return (count);
+num_aux = num_abs;
+count_Zero = 1;
+while (num_aux > 9)
+{
+num_aux /= 10;
+count_Zero *= 10;
+}
+
+
+while (count_Zero >= 1)
+{
+count += _putchar(((num_abs / count_Zero) % 10) + '0');
+count_Zero /= 10;
+}
+return (count);
 }
 
 /**
@@ -78,5 +78,5 @@ int print_d(va_list arg)
  */
 int print_i(va_list arg)
 {
-	return (print_d(arg));
+return (print_d(arg));
 }

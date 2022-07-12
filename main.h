@@ -9,6 +9,7 @@
  * struct sps - flag / function object
  *@c: flag
  *@f: function
+ *
  */
 
 typedef struct sps
