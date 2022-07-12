@@ -28,7 +28,7 @@ int print_s(va_list arg)
 
 	for (i = 0; str[i]; i++)
 		len += _putchar(str[i]);
-	return (count);
+	return (len);
 }
 
 /**

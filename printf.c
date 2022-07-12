@@ -33,7 +33,11 @@ int _printf(const char *format, ...)
 				{
 					print = get_func(format[i + 1]);
 					count += (print ? print(arg) : _putchar(format[i])
+<<<<<<< HEAD
 						  + _putchar(format[i + 1]));
+=======
+							+ _putchar(format[i + 1]));
+>>>>>>> 284a93582e540932293d99e4d8ccd50210f022dd
 					i++;
 				}
 			}
