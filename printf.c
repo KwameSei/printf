@@ -21,6 +21,7 @@ va_start(arg, format);
 if (format[0] == '%' && format[1] == '\0')
 return (-1);
 
+<<<<<<< HEAD
 count = 0;
 for (i = 0; format[i] != '\0'; i++)
 {
@@ -45,6 +46,31 @@ count += _putchar(format[i]);
 }
 va_end(arg);
 }
+=======
+		count = 0;
+		for (i = 0; format[i] != '\0'; i++)
+		{
+			if (format[i] == '%')
+			{
+				if (format[i + 1] == '%')
+				{
+					count += _putchar(format[i]);
+					i++;
+				}
+				else if (format[i + 1] != '\0')
+				{
+					print = get_func(format[i + 1]);
+					count += (print ? print(arg) : _putchar(format[i])
+						  + _putchar(format[i + 1]));
+					i++;
+				}
+			}
+			else
+				count += _putchar(format[i]);
+		}
+		va_end(arg);
+	}
+>>>>>>> 41d94b3402542d5281445ddcda6281f109b3cf48
 
 return (count);
 }
