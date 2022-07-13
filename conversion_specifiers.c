@@ -26,7 +26,7 @@ int print_s(va_list arg)
 	if (str == NULL)
 		str = "nil";
 
-	for (i = 0; str[i]; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	len += _putchar(str[i]);
 	return (len);
 }

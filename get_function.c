@@ -12,6 +12,7 @@ sps_t sps[] = {
 {"s", print_s},
 {"d", print_d},
 {"i", print_i},
+{"b", print_b},
 {NULL, NULL}
 };
 
