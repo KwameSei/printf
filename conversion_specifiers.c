@@ -7,9 +7,9 @@
  */
 int print_c(va_list arg)
 {
-int c = va_arg(arg, int);
+	int c = va_arg(arg, int);
 
-return (_putchar(c));
+	return (_putchar(c));
 }
 
 /**
@@ -19,16 +19,16 @@ return (_putchar(c));
  */
 int print_s(va_list arg)
 {
-int i, len = 0;
-char *str;
+	int i, len = 0;
+	char *str;
 
-str = va_arg(arg, char *);
-if (str == NULL)
-str = "nil";
+	str = va_arg(arg, char *);
+	if (str == NULL)
+		str = "nil";
 
-for (i = 0; str[i]; i++)
-len += _putchar(str[i]);
-return (len);
+	for (i = 0; str[i]; i++)
+	len += _putchar(str[i]);
+	return (len);
 }
 
 /**
