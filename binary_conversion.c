@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_b - Conversion of decimals to binary
- * @binary_list: Store the argument values
- * Return: count
+ * print_b - converts to binary all decimals passed
+ * @arg: passed variable
+ * Return: length of converted arg
  */
 
-int print_b(va_list binary_list)
+int print_b(va_list arg)
 {
 unsigned int i, count, number, binary, arr[32];
 
 i = 0, count = 0;
-number = va_arg(binary_list, int);
+number = va_arg(arg, int);
 
 if (number < 1)
 {

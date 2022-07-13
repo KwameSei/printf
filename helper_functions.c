@@ -5,19 +5,17 @@
  * @arg: stores a list of characters
  * Return: num of parameters printed
  */
-/**
 int print_c(va_list arg)
 {
 int c = va_arg(arg, int);
 return (_putchar(c));
 }
-*/
+
 /**
  * print_s - print string (%s)
  * @arg: stores a list of characters
  * Return: num of parameters printed
  */
-/**
 int print_s(va_list arg)
 {
 int i, count = 0;
@@ -32,4 +30,3 @@ count += _putchar(str[i]);
 
 return (count);
 }
-*/
