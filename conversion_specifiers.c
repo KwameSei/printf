@@ -24,7 +24,7 @@ int print_s(va_list arg)
 
 	str = va_arg(arg, char *);
 	if (str == NULL)
-		str = "nil";
+		str = "(null)";
 
 	for (i = 0; str[i] != '\0'; i++)
 	len += _putchar(str[i]);
