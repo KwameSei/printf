@@ -21,6 +21,7 @@ int (*f)(va_list arg);
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+void reverse_array(char *a, int n);
 int print_c(va_list arg);
 int (*get_func(char s))(va_list arg);
 int print_s(va_list arg);
